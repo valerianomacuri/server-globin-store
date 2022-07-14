@@ -6,49 +6,49 @@
                 {
                     "name": "Rusty Sword",
                     "description": "Simple sword description.",
-                    "image": "server/images/rusty_sword.png",
+                    "image": "public/images/rusty_sword.png",
                     "price": "5"
                 },
                 {
                     "name": "Broad Sword",
                     "description": "Simple sword description.",
-                    "image": "server/images/broad_sword.png",
+                    "image": "public/images/broad_sword.png",
                     "price": "25"
                 },
                 {
                     "name": "Katana",
                     "description": "Simple sword description.",
-                    "image": "server/images/katana.png",
+                    "image": "public/images/katana.png",
                     "price": "50"
                 },
                 {
                     "name": "Scimitar",
                     "description": "Simple sword description.",
-                    "image": "server/images/scimitar.png",
+                    "image": "public/images/scimitar.png",
                     "price": "60"
                 },
                 {
                     "name": "Sabre",
                     "description": "Simple sword description.",
-                    "image": "server/images/sabre.png",
+                    "image": "public/images/sabre.png",
                     "price": "70"
                 },
                 {
                     "name": "Divine Sword",
                     "description": "Simple sword description.",
-                    "image": "server/images/divine_sword.png",
+                    "image": "public/images/divine_sword.png",
                     "price": "250"
                 },
                 {
                     "name": "Basic Spear",
                     "description": "Simple sword description.",
-                    "image": "server/images/basic_spear.png",
+                    "image": "public/images/basic_spear.png",
                     "price": "5"
                 },
                 {
                     "name": "Elven Wand",
                     "description": "Simple sword description.",
-                    "image": "server/images/elven_wand.png",
+                    "image": "public/images/elven_wand.png",
                     "price": "100"
                 }
             ]
@@ -59,19 +59,19 @@
                 {
                     "name": "Rusty Helmet",
                     "description": "Simple sword description.",
-                    "image": "server/images/rusty_helmet.png",
+                    "image": "public/images/rusty_helmet.png",
                     "price": "7"
                 },
                 {
                     "name": "Plate Armor",
                     "description": "Simple sword description.",
-                    "image": "server/images/plate_armor.png",
+                    "image": "public/images/plate_armor.png",
                     "price": "75"
                 },
                 {
                     "name": "Golden Armor",
                     "description": "Simple sword description.",
-                    "image": "server/images/golden_armor.png",
+                    "image": "public/images/golden_armor.png",
                     "price": "200"
                 }
             ]
@@ -82,7 +82,7 @@
                 {
                     "name": "Ruby Potion",
                     "description": "Simple sword description.",
-                    "image": "server/images/ruby_potion.png",
+                    "image": "public/images/ruby_potion.png",
                     "price": 10
                 }
             ]
@@ -93,7 +93,7 @@
                 {
                     "name": "Raspberry Pie",
                     "description": "Simple sword description.",
-                    "image": "server/images/raspberry_pie.png",
+                    "image": "public/images/raspberry_pie.png",
                     "price": 1
                 }
             ]
