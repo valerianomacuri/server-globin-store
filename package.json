@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node index.ts",
-    "postinstall": "npx tsc",
+    "postinstall": "tsc",
     "start": "node dist/index.js"
   },
   "keywords": [],
