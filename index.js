@@ -4,20 +4,9 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 
-import data from "./products.json";
-
-interface Product {
-  name: string;
-  price: number;
-  image: string;
-}
-
-interface Order {
-  products: Product[];
-}
-
-const orders: Order[] = [];
-
+import data from "./products.json" assert { type: "json" };
+import { createConnection, getConnection } from "./db.js";
+createConnection();
 const app = express();
 
 app.use(express.static("public"));
@@ -30,15 +19,22 @@ app.get("/products", (req, res) => {
   return res.json(data);
 });
 
-app.post("/checkout", (req, res) => {
+app.post("/checkout", async (req, res) => {
+  const db = getConnection();
   const newOrder = req.body;
-  orders.push(newOrder);
-  res.json({ success: true, orderId: orders.length - 1 });
+  await db.read();
+  db.data.orders.push(newOrder);
+  const orderId = db.data.orders.length - 1;
+  await db.write();
+  res.json({ success: true, orderId });
 });
 
-app.get("/order/:orderId", (req, res) => {
+app.get("/order/:orderId", async (req, res) => {
+  const db = getConnection();
   const { orderId } = req.params;
-  const order = orders[Number(orderId)];
+  await db.read();
+  const order = db.data.orders[Number(orderId)];
+  await db.write();
 
   if (order) {
     return res.json({

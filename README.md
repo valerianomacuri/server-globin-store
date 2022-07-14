@@ -1,11 +1,5 @@
 # server-globin-store
 
-## Build
-
-```console
-npm run postinstall
-```
-
 ## Development
 
 ```console
