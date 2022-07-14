@@ -1,6 +1,6 @@
 /node_modules
-
+/dist
 # All js files
 
 *.js
-*.js*
+*.js.map

@@ -3,7 +3,7 @@
 ## Build
 
 ```console
-npm run build
+npm run postinstall
 ```
 
 ## Development
